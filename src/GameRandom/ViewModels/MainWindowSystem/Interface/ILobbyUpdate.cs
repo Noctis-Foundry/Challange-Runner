@@ -6,7 +6,7 @@ namespace GameRandom.ViewModels.MainWindowSystem.Interface;
 
 public interface ILobbyUpdate
 {
-    public List<ProfileContext> UserContext { get; }
+    public List<SteamProfile> UserContext { get; }
     public Task UpdateLobby();
     public void Dispose();
 }

@@ -8,7 +8,7 @@ namespace GameRandom.Scripts.SteamSDK.SteamWebAPI;
 
 public interface ISteamWebService
 {
-    public Task<ProfileContext?> GetProfile(ulong steamId64, CancellationToken token = default);
+    public Task<SteamProfile?> GetProfile(ulong steamId64, CancellationToken token = default);
     public Task<JsonDocument?> GetOwnedGames(ulong steamId64);
     public Task<GenerateGameStruct> GetGameFromStore(int appId);
 }

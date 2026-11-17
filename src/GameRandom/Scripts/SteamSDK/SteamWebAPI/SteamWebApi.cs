@@ -43,7 +43,7 @@ public class SteamWebApi : ISteamWebService
         }
     }
     
-    public async Task<ProfileContext?> GetProfile(ulong steamId64, CancellationToken token = default)
+    public async Task<SteamProfile?> GetProfile(ulong steamId64, CancellationToken token = default)
     {
         Logger.Debug($"Try get profile by id: {steamId64}");
         
@@ -240,7 +240,7 @@ public class UserProfileSummary : IProfileSummary
 {
     private static readonly HttpClient _client = new();
     
-    public async Task<ProfileContext?> GetUserData(string steamUrl, ulong userId, CancellationToken token = default)
+    public async Task<SteamProfile?> GetUserData(string steamUrl, ulong userId, CancellationToken token = default)
     { 
         try
         {
@@ -263,7 +263,7 @@ public class UserProfileSummary : IProfileSummary
             var avatarMedium = player.GetProperty("avatarmedium").ToString();
             var avatarFull = player.GetProperty("avatarfull").ToString();
         
-            var profileCtx = new ProfileContext
+            var profileCtx = new SteamProfile
             {
                 avatar32x32 = avatar,
                 avatar64x64 = avatarMedium,

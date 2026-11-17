@@ -23,7 +23,7 @@ public class MainWindowUpdateLobby : BaseModelService, ILobbyUpdate
     private SemaphoreSlim _semaphoreSlim = new(1, 1);
     private const int SemaphoreWaitSec = 3;
 
-    public List<ProfileContext> UserContext { get; private set; } = new();
+    public List<SteamProfile> UserContext { get; private set; } = new();
 
     public MainWindowUpdateLobby()
     {
@@ -68,9 +68,9 @@ public class MainWindowUpdateLobby : BaseModelService, ILobbyUpdate
     /// Loads profile information for all users in the lobby.
     /// </summary>
     /// <param name="lobbyData">List of lobby users to load profiles for.</param>
-    private async Task<List<ProfileContext>?> LoadLobbyProfiles(List<LobbyData> lobbyData)
+    private async Task<List<SteamProfile>?> LoadLobbyProfiles(List<LobbyData> lobbyData)
     {
-        var users = new List<ProfileContext>();
+        var users = new List<SteamProfile>();
         
         foreach (var lobbyUser in lobbyData)
         {

@@ -11,7 +11,7 @@ namespace GameRandom.Scripts.StartupLogic;
 public class GameEnvLoad
 {
     private HttpClient _client;
-    private const string _url = "http://80.93.62.153/config/config.json";
+    private const string _url = "http://80.93.62.153:60123/config/config.json";
     public static Dictionary<EnvType, string> _envCollection { get; private set; } = new();
 
     public async Task InitializeEnv()

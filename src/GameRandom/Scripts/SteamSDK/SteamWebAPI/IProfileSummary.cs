@@ -6,5 +6,5 @@ namespace GameRandom.Scripts.SteamSDK.SteamWebAPI;
 
 public interface IProfileSummary
 {
-    public Task<ProfileContext?> GetUserData(string steamUrl, ulong userId, CancellationToken token = default);
+    public Task<SteamProfile?> GetUserData(string steamUrl, ulong userId, CancellationToken token = default);
 }

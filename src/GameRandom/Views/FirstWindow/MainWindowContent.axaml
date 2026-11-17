@@ -11,13 +11,13 @@
     <Grid Background="{StaticResource PaperLinearGradient}">
         <Grid Classes="MainGrid" ColumnDefinitions="*, *" RowDefinitions="*, *">
             <Button Classes="MainButton" Grid.Column="0" Grid.Row="0" Click="GoToTable">
-                <Image Classes="MainImage" Source="avares://GameRandom/Assets/LeftUpClick.png"></Image>
+                <Image Classes="MainImage" Source="avares://GameRandom/Assets/capybara_gamer.png"></Image>
             </Button>
             <Button Classes="MainButton" Grid.Column="0" Grid.Row="1" Click="GoToProfile">
-                <Image Classes="MainImage" Source="avares://GameRandom/Assets/LeftDownClick.png"></Image>
+                <Image Classes="MainImage" Source="avares://GameRandom/Assets/capybara_profile.png"></Image>
             </Button>
             <Button Classes="MainButton" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Click="GoToRollContent">
-                <Image Classes="MainImage" Source="avares://GameRandom/Assets/RightClick.png"></Image>
+                <Image Classes="MainImage" Source="avares://GameRandom/Assets/capybara_challenger.png"></Image>
             </Button>
         </Grid>
     </Grid>

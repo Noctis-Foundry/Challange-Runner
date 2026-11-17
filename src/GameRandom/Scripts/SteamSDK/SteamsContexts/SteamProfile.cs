@@ -1,6 +1,6 @@
 ﻿namespace GameRandom.Scripts.SteamSDK.SteamsContexts;
 
-public class ProfileContext
+public class SteamProfile
 {
     public ulong MemberID;
     public string nickname;

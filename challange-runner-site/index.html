@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff6f8">
+  <meta name="description"
+    content="Challenge Runner — discover random games from your Steam library and take on challenges with friends.">
+
+  <title>Challenge Runner — Random Games. Real Challenges.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="#home">
+        <span>CR</span> Challenge Runner
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        MENU
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="nav-socials">
+        <a href="https://github.com/Noctis-Foundry/Challange-Runner" target="_blank" rel="noopener">GH</a>
+        <a href="https://ar0-cka.itch.io/challlenge-runner" target="_blank" rel="noopener">ITCH</a>
+        <a href="https://t.me/NoctisFoundry" target="_blank" rel="noopener">TG</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="container hero" id="home">
+
+      <div class="hero-copy">
+        <div class="eyebrow">A little chaos. A lot of challenges.</div>
+
+        <h1>
+          Challenge
+          <span>Runner.</span>
+        </h1>
+
+        <p class="hero-description">
+          Can't decide what to play?
+          Let fate choose your next adventure.
+          Discover random games from your Steam library,
+          challenge your friends and track your progress together.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="https://ar0-cka.itch.io/challlenge-runner" target="_blank" rel="noopener">
+            Download on itch.io ↗
+          </a>
+
+          <a class="button" href="https://github.com/Noctis-Foundry/Challange-Runner" target="_blank" rel="noopener">
+            View source ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-stamp">BETA 0.4.0</div>
+
+        <img class="hero-image" src="assets/capybara.png" alt="Challenge Runner capybara mascot">
+      </div>
+
+    </div>
+
+    <!-- SCREENSHOTS -->
+    <section id="screenshots">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Take a closer look</div>
+            <h2>Inside the Runner.</h2>
+          </div>
+
+          <p>
+            A simple interface for organizing challenges,
+            discovering games and playing together.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <figure class="gallery-card">
+            <img src="assets/main-menu.png" alt="Challenge Runner main menu">
+            <figcaption>01 — Main Menu</figcaption>
+          </figure>
+
+          <div class="gallery-side">
+
+            <figure class="gallery-card">
+              <img src="assets/current-game.png" alt="Current game window">
+              <figcaption>02 — Current Game</figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+              <img src="assets/randomizer.png" alt="Game randomizer">
+              <figcaption>03 — Game Randomizer</figcaption>
+            </figure>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">What makes it special?</div>
+            <h2>Features.</h2>
+          </div>
+
+          <p>
+            Everything you need to turn your game backlog
+            into a series of unpredictable challenges.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature">
+            <div class="feature-number">01 / RANDOMIZER</div>
+            <h3>Random Games</h3>
+            <p>
+              Generate 1–5 random games from your Steam library.
+              Let fate decide what you play next.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-number">02 / MULTIPLAYER</div>
+            <h3>Game Lobbies</h3>
+            <p>
+              Create or join lobbies and organize challenges
+              with your friends.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-number">03 / FILTERS</div>
+            <h3>Custom Filters</h3>
+            <p>
+              Choose from 47 categories, 12 genres
+              and release years to customize your selection.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-number">04 / PROGRESS</div>
+            <h3>Progress Tracking</h3>
+            <p>
+              Follow everyone's progress, current games,
+              completion status and playtime.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-number">05 / RULES</div>
+            <h3>Challenge Rules</h3>
+            <p>
+              Configure roll counts, difficulty,
+              multiplayer requirements and rewards.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-number">06 / CROSS-PLATFORM</div>
+            <h3>Play Anywhere</h3>
+            <p>
+              Built with Avalonia for a cross-platform
+              experience on Windows and Linux.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section>
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Getting started</div>
+            <h2>Four simple steps.</h2>
+          </div>
+        </div>
+
+        <div class="steps">
+
+          <article class="step">
+            <h3>Connect Steam</h3>
+            <p>Authorize through Steam and access your game library.</p>
+          </article>
+
+          <article class="step">
+            <h3>Find your party</h3>
+            <p>Create a lobby or join your friends.</p>
+          </article>
+
+          <article class="step">
+            <h3>Roll the dice</h3>
+            <p>Configure filters and generate random games.</p>
+          </article>
+
+          <article class="step">
+            <h3>Take the challenge</h3>
+            <p>Play, complete games and track your progress.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY & STATUS -->
+    <section id="about">
+      <div class="container">
+
+        <div class="info-grid">
+
+          <div class="info-panel">
+            <div class="eyebrow">Under the hood</div>
+            <h2>Technology.</h2>
+
+            <div class="tech-list">
+              <div class="tech-item">C#</div>
+              <div class="tech-item">.NET 10</div>
+              <div class="tech-item">Avalonia</div>
+              <div class="tech-item">Entity Framework</div>
+              <div class="tech-item">SteamSDK</div>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <div class="eyebrow">Current release</div>
+            <h2>Project Status.</h2>
+
+            <div class="status-label">BETA VERSION 0.4.0</div>
+
+            <div class="platforms">
+              <div class="platform">
+                <strong>Linux x64</strong>
+                AppImage
+              </div>
+
+              <div class="platform">
+                <strong>Windows x64</strong>
+                NSIS Setup
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div class="final-cta">
+      <div class="container">
+
+        <div class="eyebrow">Your backlog is waiting.</div>
+        <h2>Ready to roll?</h2>
+
+        <p>
+          Stop wondering what to play next.<br>
+          Gather your friends and let the challenge begin.
+        </p>
+
+        <a class="button primary" href="https://ar0-cka.itch.io/challlenge-runner" target="_blank" rel="noopener">
+          Get Challenge Runner ↗
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-content">
+
+        <div>
+          <div class="footer-brand">Challenge Runner.</div>
+          <div class="copyright">© 2026 Noctis Foundry</div>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://ar0-cka.itch.io/challlenge-runner" target="_blank" rel="noopener">itch.io</a>
+          <a href="https://github.com/Noctis-Foundry/Challange-Runner" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://t.me/NoctisFoundry" target="_blank" rel="noopener">Telegram</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
